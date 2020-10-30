@@ -1,0 +1,33 @@
+<div class="content">
+    <nz-card class="card" [nzBordered]="false" nzTitle="SIGN UP" [nzExtra]="extraTemplate">
+        <div class="form">
+            <form nz-form [formGroup]="validateForm" class="signup-form" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Name!">
+                    <nz-input-group nzPrefixIcon="user">
+                    <input type="text" nz-input formControlName="name" placeholder="Name" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Email!">
+                    <nz-input-group nzPrefixIcon="user">
+                    <input type="text" nz-input formControlName="email" placeholder="Email" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Password!">
+                    <nz-input-group nzPrefixIcon="lock">
+                    <input type="password" nz-input formControlName="password" placeholder="Password" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <button nz-button class="signup-form-button signup-form-margin" [nzType]="'primary'" (click)="Signup()">SIGN UP</button>
+            </form>
+            <div class="default">
+                <button nz-button nzType="danger" nzDanger (click)="login()">LOG IN</button>
+            </div>
+        </div>
+    </nz-card>
+</div>

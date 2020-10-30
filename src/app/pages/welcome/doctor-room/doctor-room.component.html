@@ -1,0 +1,56 @@
+<div class="content">
+    <div class="logo">
+        
+    </div>
+    <nz-card class="card" [nzBordered]="false" nzTitle="Create a Doctors' Room" [nzExtra]="extraTemplate">
+        <div class="form">
+            <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Room Number!">
+                    <nz-input-group nzPrefixIcon="audit">
+                    <input type="text" nz-input formControlName="roomNumber" placeholder="Room Number" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Doctor Type!">
+                    <nz-input-group nzPrefixIcon="user">
+                    <input type="text" nz-input formControlName="doctorType" placeholder="Doctor type - e.g. Dentist" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your First Name!">
+                    <nz-input-group nzPrefixIcon="user">
+                    <input type="text" nz-input formControlName="firstName" placeholder="First Name" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your Last Name!">
+                        <nz-input-group nzPrefixIcon="user">
+                        <input type="text" nz-input formControlName="lastName" placeholder="Last Name" />
+                        </nz-input-group>
+                    </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your Email!">
+                        <nz-input-group nzPrefixIcon="mail">
+                        <input type="email" nz-input formControlName="email" placeholder="Email" />
+                        </nz-input-group>
+                    </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your Mobile Number!">
+                        <nz-input-group nzPrefixIcon="idcard">
+                        <input type="text" nz-input formControlName="mobileNumber" placeholder="Mobile Number" />
+                        </nz-input-group>
+                    </nz-form-control>
+                    </nz-form-item>
+                <button nz-button class="doctor-room-button doctor-room-margin" [nzType]="'primary'" (click)="OnSubmit()">
+                    <strong>SUBMIT</strong>
+                </button>
+            </form>
+        </div>
+    </nz-card>
+</div>

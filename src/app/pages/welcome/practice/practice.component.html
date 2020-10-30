@@ -1,0 +1,38 @@
+<div class="content">
+    <nz-card class="card" [nzBordered]="false" nzTitle="What is your Practice" [nzExtra]="extraTemplate">
+        <div class="form">
+            <form nz-form [formGroup]="validateForm" class="practice-form" (ngSubmit)="submitForm()">
+                <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Practice Type!">
+                    <nz-input-group>
+                    <input type="text" nz-input formControlName="type" placeholder="Practice Type" />
+                    </nz-input-group>
+                </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your Practice Number!">
+                        <nz-input-group>
+                        <input type="text" nz-input formControlName="number" placeholder="Practice Number" />
+                        </nz-input-group>
+                    </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                    <nz-form-control nzErrorTip="Please input your Practice Name">
+                        <nz-input-group>
+                        <input type="text" nz-input formControlName="name" placeholder="Practice Name" />
+                        </nz-input-group>
+                    </nz-form-control>
+                    </nz-form-item>
+                    <nz-select nzAllowClear nzPlaceHolder="How long have you been practicing">
+                        <nz-option nzValue="5" nzLabel="5 Years"></nz-option>
+                        <nz-option nzValue="6" nzLabel="6 Years"></nz-option>
+                        <nz-option nzValue="7" nzLabel="7 Years"></nz-option>
+                        <nz-option nzValue="8" nzLabel="8 Years"></nz-option>
+                    </nz-select>
+                <button nz-button class="practice-button practice-margin" [nzType]="'primary'" (click)="OnSubmit()">
+                    <strong> SUBMIT </strong>
+                </button>
+            </form>
+        </div>
+    </nz-card>
+</div>

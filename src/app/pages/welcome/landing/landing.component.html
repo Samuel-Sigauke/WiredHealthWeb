@@ -1,0 +1,30 @@
+<nz-card class="card">
+    <!-- <nz-card-meta class="title" nzTitle="Welcome"></nz-card-meta> -->
+    <div class="title">
+        <strong> Welcome </strong>
+    </div>
+    <div class="subtitle">
+        <strong> What would you like to do? </strong>
+    </div>
+</nz-card>
+<div class="content">
+    <div class="primary">
+        <button nz-button nzType="primary" nzBlock (click)="onSchedule()"> SCHEDULE APPOINTMENT </button>
+    </div>
+    <div class="primary">
+        <button nz-button nzType="danger" nzBlock (click)="onView()"> VIEW BOOKINGS </button>
+    </div>
+    <div class="primary">
+        <button nz-button nzType="primary" nzBlock (click)="onMsg()"> MESSAGES </button>
+    </div>
+    <div class="primary">
+        <button nz-button nzType="danger" nzBlock (click)="onDoc()"> CREATE DOCTORSS ROOM </button>
+    </div>
+    <div class="primary">
+        <button nz-button nzType="primary" nzBlock (click)="onCapture()"> CAPTURE CONTACT </button>
+    </div>
+</div>
+
+<!-- <ng-template #actionSetting>
+    <i nz-icon nzType="setting"></i>
+</ng-template> -->

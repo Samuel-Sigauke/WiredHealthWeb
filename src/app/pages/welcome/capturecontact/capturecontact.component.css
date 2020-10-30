@@ -1,0 +1,26 @@
+.content {
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 30%;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.header {
+  margin-bottom: 2%;
+}
+.contact-form {
+  max-width: 100%;
+}
+
+.capture-contact-forgot {
+  float: right;
+}
+
+.capture-contact-button {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}

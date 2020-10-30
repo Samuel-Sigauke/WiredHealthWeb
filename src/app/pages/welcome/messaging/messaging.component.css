@@ -1,0 +1,26 @@
+.card {
+    width: 40%;
+    opacity:.6;
+    background-image: url('../../../../assets/images/doc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    margin-left: 25%;
+    margin-top: 2%;
+    color: aliceblue;
+}
+
+.title {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 60%;
+    color: aliceblue;
+    font-size: 150%;
+}
+
+.content {
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 1%;
+    color: black;
+}

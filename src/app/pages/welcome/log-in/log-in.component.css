@@ -1,0 +1,28 @@
+
+.content {
+    margin-top: 8%;
+    margin-left: 25%;
+    max-width: 80%;
+}
+.header {
+    margin-bottom: 2%;
+}
+.login-form {
+    max-width: 100%;
+  }
+
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+
+  .default {
+      margin-left: 65%;
+  }

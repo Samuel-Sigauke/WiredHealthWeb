@@ -1,0 +1,31 @@
+.content {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 30%;
+}
+
+.card {
+    max-width: 100%;
+}
+
+.header {
+    margin-bottom: 2%;
+}
+.signup-form {
+    max-width: 100%;
+  }
+
+  .signup-form-forgot {
+    float: right;
+  }
+
+  .signup-form-button {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+  }
+
+  .default {
+    margin-left: 43%;
+    margin-right: 30%;
+  }
